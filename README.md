@@ -6,6 +6,8 @@ This skill provides:
 - One-shot action plan runner (`scripts/run_actions.py`)
 - Local desktop control agent API (`scripts/desktop_agent.py`)
 - Client tool for remote command/screenshot (`scripts/desktop_client.py`)
+- Browser DOM control agent for web automation (`scripts/browser_dom_agent.py`)
+- Browser DOM client for selector-based web actions (`scripts/browser_dom_client.py`)
 
 ## Structure
 
@@ -39,6 +41,27 @@ python scripts/desktop_client.py --token YOUR_TOKEN execute --plan examples/open
 
 ```powershell
 python scripts/desktop_client.py --token YOUR_TOKEN capture --out latest.png
+```
+
+## Browser DOM Mode (Recommended for Websites)
+
+1. Install browser dependency:
+
+```powershell
+python -m pip install playwright
+python -m playwright install chromium
+```
+
+2. Start browser DOM agent:
+
+```powershell
+python scripts/browser_dom_agent.py --token YOUR_TOKEN
+```
+
+3. Run DOM plan:
+
+```powershell
+python scripts/browser_dom_client.py --token YOUR_TOKEN run --plan examples/github-readme-dom.json
 ```
 
 ## Safety Notes

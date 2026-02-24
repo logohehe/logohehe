@@ -1,0 +1,24 @@
+{
+  "steps": [
+    {
+      "type": "goto",
+      "url": "https://github.com/logohehe/logohehe/new/master?profile_readme=1"
+    },
+    {
+      "type": "wait_for",
+      "selector": "textarea",
+      "state": "visible",
+      "timeout_ms": 20000
+    },
+    {
+      "type": "fill",
+      "selector": "textarea",
+      "text": "# Hi there, I'm logohehe\n\nI build automation tools and AI workflows.\n"
+    },
+    {
+      "type": "click",
+      "selector": "button:has-text('Commit changes...')",
+      "timeout_ms": 15000
+    }
+  ]
+}
