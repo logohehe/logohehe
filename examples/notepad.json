@@ -1,0 +1,13 @@
+{
+  "start_delay": 3.0,
+  "default_pause": 0.12,
+  "actions": [
+    {"type": "hotkey", "keys": ["win", "r"]},
+    {"type": "wait", "seconds": 0.6},
+    {"type": "type", "text": "notepad"},
+    {"type": "key", "key": "enter"},
+    {"type": "wait", "seconds": 1.0},
+    {"type": "type", "text": "hello from windows-input-automation"}
+  ]
+}
+

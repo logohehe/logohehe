@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows Input Automation"
+  short_description: "Scripted mouse and keyboard automation for Windows tasks"
+  default_prompt: "Create and run a safe, deterministic action plan to automate a Windows desktop task using mouse and keyboard input."

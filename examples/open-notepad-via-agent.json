@@ -1,0 +1,8 @@
+{
+  "actions": [
+    {"type": "click", "x": 969, "y": 1416, "button": "left", "count": 1},
+    {"type": "wait", "seconds": 0.5},
+    {"type": "type", "text": "notepad"},
+    {"type": "key", "key": "enter"}
+  ]
+}

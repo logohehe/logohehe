@@ -1,0 +1,12 @@
+{
+  "start_delay": 0.3,
+  "default_pause": 0.12,
+  "actions": [
+    {"type": "click", "x": 969, "y": 1416, "button": "right", "count": 1},
+    {"type": "wait", "seconds": 0.4},
+    {"type": "type", "text": "r"},
+    {"type": "wait", "seconds": 0.4},
+    {"type": "type", "text": "notepad"},
+    {"type": "key", "key": "enter"}
+  ]
+}
